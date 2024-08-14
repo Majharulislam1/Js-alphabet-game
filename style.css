@@ -25,11 +25,11 @@ main {
     font-family: "Poppins", sans-serif;
 }
 
-.hidden{
-    display: none;
+.hidden {
+    display: none !important;
 }
 
-.visible{
+.visible {
     display: block;
 }
 
@@ -47,51 +47,143 @@ main {
     font-weight: 400;
 }
 
-.start_content p{
+.start_content p {
     color: white;
     font-size: 1rem;
     margin-bottom: 2rem;
 }
 
-.start_content button{
-     background-color: #fff;
-     padding: 1rem 2rem;
-     border: none;
-     border-radius: 10px;
-     font-size: 1rem;
-}
-
-
-
-.score{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     height: 90vh;
-}
-
-.score_content{
+.start_content button {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border: none;
     border-radius: 10px;
-    background: linear-gradient(136.67deg, rgba(255, 255, 255, 0.56) 0%,rgba(152, 151, 151, 0) 102.037%);
+    font-size: 1rem;
+}
+
+
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.score_content {
+    border-radius: 10px;
+    background: linear-gradient(136.67deg, rgba(255, 255, 255, 0.56) 0%, rgba(152, 151, 151, 0) 102.037%);
     padding: 1.5rem;
     text-align: center;
 }
 
-.score_content h2{
-     text-align: center;
-     color: #ffffff;
-     font-size: 2.5rem;
-     margin-bottom: 0.5rem;
+.score_content h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.score_content button{
-     padding: 10px 15px;
-     border: none;
-     border-radius: 7px;
-     margin-bottom: 0.5rem;
+.score_content button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 0.5rem;
 }
 
-.score_content p{
-     color: white;
+.score_content p {
+    color: white;
+}
+
+.screen_design {
+    width: 600px;
+    height: 250px;
+    box-sizing: border-box;
+    border: 10px solid rgba(1, 3, 19, 0.8);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.screen_headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen_headline p {
+    border-radius: 0px 0px 12px 12px;
+    background: rgb(47, 41, 65);
+    color: white;
+    padding: 0.5rem;
+}
+
+.character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.character h1 {
+    font-size: 4rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* keyboard section  */
+
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keyboard button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    display: inline-block;
+    padding: .5rem;
+    margin: .3rem;
+    font-size: 1.3rem;
+    color: #000000;
+    width: 40px;
+    height: 40px;
+    border-radius: .5rem;
+}
+
+.button_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.live_button button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: rgb(137, 65, 137);
+    color: white;
+}
+
+
+.score_button button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: rgb(54, 4, 144);
+    color: white;
+}
+
+.game_section{
+     display: flex;
+     justify-content:space-around;
+     align-items: center;
+     flex-direction: column;
+     height: 100vh;
 }
