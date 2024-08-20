@@ -16,7 +16,7 @@
                <div class="start_content">
                    <h1 class="font_antony">ALPHABET CLASH</h1>
                    <p class="font_poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                   <button>Play Now</button>
+                   <button onclick="play()">Play Now</button>
                </div>
            </section>
           
@@ -24,79 +24,84 @@
 
         <!-- game section  -->
         
-        <section class="game_section hidden">
-            <div class="screen_design">
-                <div class="screen_headline">
-                     <p>Don't watch keyboard  while playing...</p>
-                </div>
-                <div class="character">
-                     <h1>X</h1>
-                </div>
-           </div>
-   
-           <div class="keyboard_section">
-               <div class="keyboard">
-                   <div class="row">
-                       <button class="btn">q</button>
-                       <button class="btn">w</button>
-                       <button class="btn">e</button>
-                       <button class="btn">r</button>
-                       <button class="btn">t</button>
-                       <button class="btn">y</button>
-                       <button class="btn">u</button>
-                       <button class="btn">i</button>
-                       <button class="btn">o</button>
-                       <button class="btn">p</button>
-                   </div>
-                   <div class="row">
-                       <button class="btn">a</button>
-                       <button class="btn">s</button>
-                       <button class="btn">d</button>
-                       <button class="btn">f</button>
-                       <button class="btn">g</button>
-                       <button class="btn">h</button>
-                       <button class="btn">j</button>
-                       <button class="btn">k</button>
-                       <button class="btn">l</button>
-                   </div>
-                   <div class="row">
-                       <button class="btn">z</button>
-                       <button class="btn">x</button>
-                       <button class="btn">c</button>
-                       <button class="btn">v</button>
-                       <button class="btn">b</button>
-                       <button class="btn">n</button>
-                       <button class="btn">m</button>
-                       <button class="btn">/</button>
+        <section class="game_sections hidden">
+            <div class="game_section">
+                <div class="screen_design">
+                    <div class="screen_headline">
+                         <p>Don't watch keyboard  while playing...</p>
+                    </div>
+                    <div class="character">
+                         <h1 id="character">X</h1>
+                    </div>
+               </div>
+       
+               <div class="keyboard_section">
+                   <div class="keyboard">
+                       <div class="row">
+                           <button class="btn" id="q">q</button>
+                           <button class="btn" id="w">w</button>
+                           <button class="btn" id="e">e</button>
+                           <button class="btn" id="r">r</button>
+                           <button class="btn" id="t">t</button>
+                           <button class="btn" id="y">y</button>
+                           <button class="btn" id="u">u</button>
+                           <button class="btn" id="i">i</button>
+                           <button class="btn" id="o">o</button>
+                           <button class="btn" id="p">p</button>
+                       </div>
+                       <div class="row">
+                           <button class="btn" id="a">a</button>
+                           <button class="btn" id="s">s</button>
+                           <button class="btn" id="d">d</button>
+                           <button class="btn" id="f">f</button>
+                           <button class="btn" id="g">g</button>
+                           <button class="btn" id="h">h</button>
+                           <button class="btn" id="j">j</button>
+                           <button class="btn" id="k">k</button>
+                           <button class="btn" id="l">l</button>
+                       </div>
+                       <div class="row">
+                           <button class="btn" id="z">z</button>
+                           <button class="btn" id="x">x</button>
+                           <button class="btn" id="c">c</button>
+                           <button class="btn" id="v">v</button>
+                           <button class="btn" id="b">b</button>
+                           <button class="btn" id="n">n</button>
+                           <button class="btn" id="m">m</button>
+                           <button class="btn" id="/">/</button>
+                       </div>
                    </div>
                </div>
-           </div>
-   
-   
-           <div class="button_section">
-                 <div class="live_button">
-                      <button>Life <i class='bx bxs-heart-circle'></i> <span>1</span></button>
-                 </div>
-                 <div class="score_button">
-                      <button>score <i class='bx bx-dollar-circle' ></i> <span>10</span></button>
-                 </div>
-           </div>
+       
+       
+               <div class="button_section">
+                     <div class="live_button">
+                          <button>Life <i class='bx bxs-heart-circle'></i> <span id="lives">3</span></button>
+                     </div>
+                     <div class="score_button">
+                          <button>score <i class='bx bx-dollar-circle' ></i> <span id="score">0</span></button>
+                     </div>
+               </div>
+            </div>
+              
         </section>
 
        
 
 
         <!-- score section  -->
-
-        <section class="score_section hidden">
-               <div class="score">
-                   <div class="score_content">
-                         <h2 class="font_poppins">Score: <span>14</span></h2>
-                         <button>Play Now</button>
-                         <p class="font_poppins">Practice will make you pro</p>
-                   </div>
-               </div>
+        <section class="final hidden">
+            <section class="score_section">
+                <div class="score">
+                    <div class="score_content">
+                          <h2 class="font_poppins">Score: <span id="total_score">0</span></h2>
+                          <button onclick="get_play()">Play Now</button>
+                          <p class="font_poppins">Practice will make you pro</p>
+                    </div>
+                </div>
+         </section>
         </section>
+       
 
 
 

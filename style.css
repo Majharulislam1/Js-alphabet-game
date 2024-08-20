@@ -30,7 +30,7 @@ main {
 }
 
 .visible {
-    display: block;
+    display: block !important;
 }
 
 .start_content {
@@ -59,6 +59,7 @@ main {
     border: none;
     border-radius: 10px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 
@@ -90,6 +91,7 @@ main {
     border: none;
     border-radius: 7px;
     margin-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 .score_content p {
@@ -178,6 +180,7 @@ main {
     border-radius: 30px;
     background: rgb(54, 4, 144);
     color: white;
+    cursor: pointer;
 }
 
 .game_section{
